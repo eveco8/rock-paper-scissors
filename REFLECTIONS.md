@@ -1,5 +1,7 @@
 1. Share one aspect of building this project you found challenging and how you overcame it.
 
+I found my `game` function challenging because it took me a while to figure out how to make it so that I don't have multiple `if` statements comparing the users input with the computer's random choice. I overcame this by collaborating with my peers on how it can be done. At first I had the computer choose a number between 0 and 2 and then compare that to the user input of rock, paper, or scissors. But we found that it would be better optimized to have the computer choose a random word of the three options instead of a number. Then we had to figure out how to do that which was also challenging. But we realized that to get a word instead of a number, we would just have to save the function in a variable then have an array of the options to choose from and use the variable as an index to pick a random element from the array `(array[variable])`. I'm glad I had my peers to help me because I only figured this part out and understood it with their help.
+
 2. Share one technical concept that you gained a deeper understanding of through building this project. Explain that concept in simple terms and explain how it is used in your project.
 
-[Write your reflection here]
+I gained a deeper understanding of how to use functions within other functions. Instead of placing all logic into one large function, I learned to break my code into multiple smaller functions that work together. This made my code more organized, readable, and easier to maintain. In my project, I created separate `game` and `gameStats` functions in their own file, then called those functions inside a `menu` function, which was ultimately executed through a `startGame` function.

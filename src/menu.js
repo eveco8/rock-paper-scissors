@@ -18,7 +18,7 @@ const showMenu = () => {
     if (menuChoice === '1') { 
         const userInput = prompt('Choose rock, paper, or scissors: '); 
         //checks if userInput is rock, paper, or scissors
-        //.toLowerCase().trim() is so rock, paper, or scissors with capital letters and/or spaces is still understood as right (not case sensitive)
+        //.toLowerCase().trim() is so rock, paper, or scissors with capital letters and/or spaces is still understood as right (case-insensitive)
          if(userInput.toLowerCase().trim() !== 'rock' && userInput.toLowerCase().trim() !== 'paper' && userInput.toLowerCase().trim() !== 'scissors') {
             console.log('Invalid option, try again.');
          } else {
